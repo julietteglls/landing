@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+@import url("components/cards.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/container.css");
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.6; /* Improve readability */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 400; /* Normal weight for h2 */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: lightblue; 
+}
+
+.banner {
+    position: relative; /* Establish a positioning context for absolute elements */
+    color: black;
+    padding: 150px 0; /* Padding for spacing */
+    overflow: hidden; /* Ensure no overflow outside the banner */
+}
+
+.banner-image {
+    width: 100%; /* Make the image full width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image behind other content */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: -1; /* Place the image behind text */
+    opacity: 0.5; /* Optional: make the image slightly transparent */
+}
+
+.banner h1 {
+    font-size: 50px; /* Main heading size */
+    color: white; /* Set heading color */
+}
+
+.banner h2 {
+    font-size: 30px; /* Subheading size */
+    color: white; /* Set subheading color */
+    opacity: 0.8; /* Slightly transparent */
+    margin-bottom: 40px; /* Space below the subheading */
+}
+
+/* Card styles */
+.cards-container {
+    display: flex; /* Flexbox layout for cards */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-around; /* Space between cards */
+    margin: 20px 0; /* Space around card section */
+}
+
+.card {
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ddd; /* Light gray border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    margin: 15px; /* Space between cards */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    width: 350px; /* Increased fixed width for cards */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.card img {
+    width: 120px; /* Increased width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.card h3 {
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Space around text */
+    font-size: 24px; /* Increased font size for destination */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        padding: 100px 20px; /* Adjust padding */
+    }
+    .banner h1 {
+        font-size: 30px; /* Smaller font size */
+    }
+    .banner h2 {
+        font-size: 20px; /* Smaller font size */
+    }
+    body {
+        font-size: 18px; /* Adjusted body font for smaller screens */
+    }
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align */
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the form */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input, textarea {
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+

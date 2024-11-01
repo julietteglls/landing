@@ -1,0 +1,43 @@
+.btn-blue {
+    background-color: black;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.btn-blue:hover {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.btn-blue:focus {
+    outline: 2px solid #fff;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1000;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scroll-to-top:hover {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+/* Show the button when scrolling down */
+body.scrolled .scroll-to-top {
+    display: block;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GapVentures</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="banner">
+        <div class="container">
+            <h1>Change your life, apply to a gap year with GapVentures!</h1>
+            <h2>GapVentures brings you to your new friends all around the world.</h2>
+            <a href="#contact" class="btn-blue">Apply now</a> <!-- Link to the contact section -->
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Choose your destination</h2>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="images/paris.jpg" alt="GapVentures_Paris">
+                <h3>Paris</h3>
+            </div>
+            <div class="card">
+                <img src="images/shanghai.jpg" alt="GapVentures_Shanghai">
+                <h3>Shanghai</h3>
+            </div>
+            <div class="card">
+                <img src="images/london.jpg" alt="GapVentures_London">
+                <h3>London</h3>
+            </div>
+            <div class="card">
+                <img src="images/thailand.jpg" alt="GapVentures_Thailand">
+                <h3>Thailand</h3>
+            </div>
+            <div class="card">
+                <img src="images/newyork.jpg" alt="GapVentures_NewYork">
+                <h3>New York</h3>
+            </div>
+            <div class="card">
+                <img src="images/australia.jpg" alt="GapVentures_Australia">
+                <h3>Australia</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="apply-section">
+        <div data-tf-live="01JBKMHX12THF0M70HFYHDDWH4"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+    </section>
+
+    <a href="#" class="scroll-to-top">&#x25B2;</a>
+
+    <script>
+    // Afficher le bouton lorsque l'utilisateur défile vers le bas
+    window.onscroll = function() {
+        document.body.classList.toggle("scrolled", window.scrollY > 200);
+    };
+
+    // Remonter en haut de page en cliquant sur le bouton
+    document.querySelector('.scroll-to-top').onclick = function(event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
+</body>
+</html>
